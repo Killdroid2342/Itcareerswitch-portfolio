@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haroon Khan | Full-Stack Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Haroon Khan</a>
@@ -31,8 +35,7 @@
     <header class="hero text-center">
         <div class="container">
             <h1>Hi, I'm Haroon Khan</h1>
-            <p>Creative Full-Stack Developer passionate about building beautiful, responsive, and user-friendly
-                websites.</p>
+            <p>I am a Developer passionate about building beautiful, responsive, and user-friendly websites.</p>
         </div>
     </header>
 
@@ -41,30 +44,66 @@
             <h2 class="section-title">About Me</h2>
             <p>As a full-stack developer based in Slough, I specialize in crafting interactive and responsive digital
                 experiences. I have a strong eye for design and detail, and I enjoy bringing concepts to life with clean
-                and efficient code. I'm continuously learning and growing in the field of web development.</p>
+                and efficient code. I'm continuously learning and growing in the field of web development.
+
+            </p>
+            <a href="files/CV - H.pdf" target="_blank" class="btn btn-outline-secondary mt-3">Download
+                Curriculum Vitae (PDF)</a>
         </div>
     </section>
 
     <section id="skills" class="text-center">
         <div class="container">
             <h2 class="section-title">Skills</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item badge bg-primary m-2">HTML5</li>
-                <li class="list-inline-item badge bg-primary m-2">CSS3</li>
-                <li class="list-inline-item badge bg-primary m-2">JavaScript</li>
-                <li class="list-inline-item badge bg-primary m-2">JQuery</li>
-                <li class="list-inline-item badge bg-primary m-2">Bootstrap</li>
-                <li class="list-inline-item badge bg-primary m-2">React</li>
-                <li class="list-inline-item badge bg-primary m-2">Git</li>
-                <li class="list-inline-item badge bg-primary m-2">PHP</li>
-                <li class="list-inline-item badge bg-primary m-2">Node.js</li>
-                <li class="list-inline-item badge bg-primary m-2">Express.js</li>
-                <li class="list-inline-item badge bg-primary m-2">C#</li>
-                <li class="list-inline-item badge bg-primary m-2">Astro</li>
-                <li class="list-inline-item badge bg-primary m-2">SQL</li>
-                <li class="list-inline-item badge bg-primary m-2">Tailwind CSS</li>
-                <li class="list-inline-item badge bg-primary m-2">TypeScript</li>
-            </ul>
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/HTML5.png" alt="HTML5" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/CSS.png" alt="CSS3" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/JavaScript.png" alt="JavaScript" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/JQuery.png" alt="jQuery" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/Bootstrap.png" alt="Bootstrap" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/React.png" alt="React" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/Git.png" alt="Git" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/PHP.png" alt="PHP" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/NodeJS.png" alt="Node.js" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/Expressjs.png" alt="Express.js" class="img-fluid bg-white p-2 rounded"
+                        style="background-color: #fff;">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/Csharp.png" alt="C#" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/astro.png" alt="Astro" class="img-fluid"
+                        style="background-color: #fff; padding: 5px; border-radius: 0.5rem;">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/Sql.png" alt="SQL" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/TailwindCSS.png" alt=" Tailwind CSS" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2 mb-3">
+                    <img src="img/Typescript.png" alt="TypeScript" class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -73,69 +112,149 @@
             <h2 class="section-title">Experience</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <div class="mb-4">
-                        <h5>Maidenhead Council <small class="text-muted">(Jan 2023 - Mar 2023)</small></h5>
-                        <p>Collaborated with UI/UX teams to develop and maintain mobile-friendly websites using HTML,
-                            CSS, and JavaScript. Gained hands-on experience with responsive design, accessibility, and
-                            performance best practices.</p>
+                    <div class="card shadow-sm p-4 mb-4 text-start">
+                        <h4>Web Development Intern – Maidenhead Council</h4>
+                        <p><strong>Jan 2023 – Mar 2023 | Maidenhead, UK</strong></p>
+                        <ul>
+                            <li>Collaborated with UI/UX teams to develop and maintain mobile-friendly websites using
+                                HTML, CSS, and JavaScript.</li>
+                            <li>Gained hands-on experience with responsive design, accessibility, and performance best
+                                practices.</li>
+                        </ul>
                     </div>
-                    <div class="mb-4">
-                        <h5>Star Micronics <small class="text-muted">(Jun 2024 - Nov 2024)</small></h5>
-                        <p>Delivered front-line customer support for Star Micronics printing products. Helped customers
-                            with device setup, troubleshooting, and usage guidance. Gained experience in diagnosing
-                            hardware/software issues and documenting recurring problems for product improvement.</p>
+                    <div class="card shadow-sm p-4 mb-4 text-start">
+                        <h4>Technical Support Representative – Star Micronics</h4>
+                        <p><strong>Jun 2024 – Nov 2024 | High Wycombe, UK</strong></p>
+                        <ul>
+                            <li>Delivered front-line customer support for Star Micronics printing products.</li>
+                            <li>Assisted customers with device setup, troubleshooting, and usage guidance.</li>
+                            <li>Documented recurring hardware/software issues to inform product improvements.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <h5>ITCareerSwitch <small class="text-muted">(Dec 2024 - Present)</small></h5>
-                        <p>Contributed to full-stack web applications, integrating back-end services with modern
-                            front-end technologies like React and Node.js. Involved in agile development, testing, and
-                            deployment workflows.</p>
+                    <div class="card shadow-sm p-4 text-start">
+                        <h4>Full-Stack Developer Trainee – ITCareerSwitch</h4>
+                        <p><strong>Jul 2024 – Present | Remote</strong></p>
+                        <ul>
+                            <li>Contributed to full-stack web applications using React and Node.js.</li>
+                            <li>Integrated front-end features with back-end services in an agile team environment.</li>
+                            <li>Participated in testing and deployment workflows for production releases.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section id="projects" class="text-center">
         <div class="container">
             <h2 class="section-title">Portfolio Projects</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
+            <div class="row g-4">
+                <!-- Gazetteer Project -->
+                <div class="col-md-6">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Gazetteer</h5>
-                            <p class="card-text">A city and weather lookup tool built with HTML, Bootstrap, PHP, jQuery,
-                                and the OpenWeatherMap API. It features a modern, responsive UI that provides fast,
-                                accurate weather data for any city. Users can easily search for locations and view
-                                real-time weather updates.
-                            </p>
-                            <a href="https://haroonikhan.space/project1/" target="_blank"
-                                class="btn btn-outline-primary">View
-                                Project</a>
+                            <p class="card-text">City and weather lookup tool with live data integration.</p>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#projectModal1">View Details</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+
+                <!-- Company Directory Project -->
+                <div class="col-md-6">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">Company Directory</h5>
-                            <p class="card-text">A responsive staff directory built with HTML, Bootstrap, jQuery, and
-                                PHP. Connected to a database to allow dynamic listing, search, and management of
-                                employee records.</p>
-                            <a href="https://haroonikhan.space/project2/" target="_blank"
-                                class="btn btn-outline-primary">View
-                                Project</a>
+                            <p class="card-text">Dynamic staff directory with database integration and search features.
+                            </p>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#projectModal2">View Details</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Gazetteer Modal -->
+            <!-- Gazetteer Modal -->
+            <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content shadow">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title" id="projectModal1Label">Gazetteer</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                            <p><strong>Description:</strong> A city and weather lookup tool with responsive design and
+                                live weather data.</p>
+                            <p><strong>Technologies Used:</strong></p>
+                            <div class="d-flex flex-wrap gap-3 align-items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                                    alt="Bootstrap" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                    alt="PHP" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                                    alt="jQuery" width="40">
+                                <img src="https://img.icons8.com/color/48/000000/openweathermap.png"
+                                    alt="OpenWeatherMap API" width="40">
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://haroonikhan.space/project1/" class="btn btn-outline-primary"
+                                    target="_blank">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> View Live Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Company Directory Modal -->
+            <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content shadow">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title" id="projectModal2Label">Company Directory</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                            <p><strong>Description:</strong> A searchable and filterable staff directory database
+                                system.</p>
+                            <p><strong>Technologies Used:</strong></p>
+                            <div class="d-flex flex-wrap gap-3 align-items-center">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                    alt="HTML5" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                                    alt="Bootstrap" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                                    alt="PHP" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                                    alt="jQuery" width="40">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="MySQL" width="40">
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://haroonikhan.space/project2/" class="btn btn-outline-primary"
+                                    target="_blank">
+                                    <i class="bi bi-box-arrow-up-right me-1"></i> View Live Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="contact" class="bg-light text-center">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-            <p>Reach out via the form below. I’ll respond as soon as possible!</p>
             <form action="index.php" method="POST" id="contactForm" class="mx-auto" style="max-width: 600px;">
                 <div class="mb-3">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" required>
@@ -159,8 +278,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="index.js"></script>
-
+    <script>
+        window.addEventListener("load", function () {
+            document.getElementById("preloader").style.display = "none";
+        });
+    </script>
 </body>
 
 </html>
