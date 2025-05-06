@@ -19,3 +19,6 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
       console.error('Error:', error);
     });
 });
+window.addEventListener('load', function () {
+  document.getElementById('preloader').style.display = 'none';
+});
