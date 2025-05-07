@@ -1,4 +1,8 @@
 html {
+  height: 100%;
+
+  margin: 0;
+
   scroll-behavior: smooth;
 }
 
@@ -7,9 +11,14 @@ section {
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 1030;
+  width: 100%;
+  z-index: 1050;
+  background-color: #212529;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#mainNav {
+  position: fixed;
 }
 
 .hero {
